@@ -1,0 +1,147 @@
+/* http://meyerweb.com/eric/tools/css/reset/
+	v2.0 | 20110126
+	License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	border: 0;
+	font: inherit;
+	font-size: 100%;
+	margin: 0;
+	padding: 0;
+	vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+
+body {
+	line-height: 1;
+}
+
+ol, ul {
+	list-style: none;
+}
+
+blockquote, q {
+	quotes: none;
+}
+
+blockquote::before, blockquote::after,
+q::before, q::after {
+	content: '';
+	content: none;
+}
+
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+.site-logo {
+	height: 48px;
+	padding: 2rem 1rem;
+	width: 285px;
+}
+
+.wrapper {
+  font-family: "Open Sans", sans-serif;
+  font-size: 14px;
+  display: grid;
+  grid-template-columns: repeat(12, [col-start] 1fr);
+  gap: 20px;
+}
+
+.wrapper > * {
+  grid-column: col-start / span 12;
+}
+
+header {
+  padding-bottom: 1rem;
+  display: flex;
+  justify-content: space-between;
+}
+
+date {
+  padding-left: 1rem;
+  padding-right: 1rem;
+  /* font-size: 14px; */
+  color: #9e9e9e;
+}
+
+h1 {
+  font-weight: bold;
+}
+
+.content {
+  border-bottom: 1px solid#9e9e9e;
+  padding-bottom: 1rem;
+}
+
+.is-flex {
+  display: flex !important;
+}
+
+.capsule--black {
+  padding: 5px;
+  margin: 2em auto;
+  border-radius: 20%/50%;
+  background-color: #000;
+  color: #fff;
+  cursor: pointer;
+}
+
+.capsule--plain {
+  padding: 5px;
+  margin: 2em auto;
+  border-radius: 20%/50%;
+  border: 1px solid #000;
+  color: #000;
+  margin-right: 10px;
+  margin-left: 10px;
+  cursor: pointer;
+}
+
+.comments-head {
+  grid-column: col-start / span 12;
+  grid-row: 1;
+  display: flex;
+  justify-content: space-between;
+}
+
+/* .comments-head--nav {
+  /* border: 1px solid #000000; 
+} */
+
+.content {
+  grid-column: col-start / span 12;
+  /* grid-row: 2 / 4; */
+}
+
+@media (min-width: 700px) {
+  .comments-head {
+    grid-column: col-start 3 / span 6;
+    grid-row: 1;
+  }
+
+  .content {
+    grid-column: col-start 3 / span 6;
+    /* grid-row: 2 / 4; */
+  }
+}
